@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>senma</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css " rel="stylesheet">
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+
+
+</head>
+
+<body>
+
+    <div id='picbox' class="row">
+        <div id='minpic' class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img id="tupian" src="images/xiaotu1.png" alt="...">
+                <h4 id='wenzi'>hello</h4>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        //        $('#picbox').append($('#minpic').clone());
+        //        $('#minpic').clone().appendTo($('#picbox'));
+
+
+
+
+
+
+
+        var nvhai = {
+            src: 'images/xiaotu1.png',
+            wenzi: '女孩',
+        }
+        var nanhai = {
+            src: 'images/xiaotu2.png',
+            wenzi: '男孩',
+        }
+
+            var jihe = [nvhai,nanhai];
+
+
+        function fuzhi(shuju) {
+
+            var fuben = $('#minpic').clone();
+            fuben.find('#wenzi').html(shuju.wenzi);
+            fuben.find('#wenzi').css({
+                color: 'red'
+            });
+            fuben.find('#tupian').attr(
+                'src', shuju.src);
+            fuben.appendTo($('#picbox'));
+
+        }
+
+            for(var i=0;i<2;i++){
+                fuzhi(jihe[i]);
+            }
+
+        fuzhi(nvhai);
+        fuzhi(nanhai);
+
+
+
+
+
+
+
+        //        var fuben2 = $('#minpic').clone();
+        //        fuben2.find('#wenzi').html('bay');
+        //        fuben2.appendTo($('#picbox'));
+        //
+        //        var fuben3 = $('#minpic').clone();
+        //        fuben3.find('#tupian').attr('src', 'images/xiaotu2.png');
+        //        fuben3.appendTo($('#picbox'));
+    </script>
+
+</body>
+
+</html>
+

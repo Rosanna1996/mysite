@@ -1,0 +1,177 @@
+
+
+
+#logo {
+    height: 80px;
+}
+
+.yichun {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#daohang {
+    height: 50px;
+}
+
+.navbar-default {
+    background: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-right {
+margin-right: 200px;
+    padding-left: 100px;
+}
+
+
+
+
+
+.active {
+   padding-left: 40px;
+}
+
+
+
+
+
+
+
+.navbar-collapse {
+    margin-top: 5px;
+}
+
+#zhutitu {
+    text-align: center;
+    height: 650px;
+}
+
+
+
+#fashion {
+    height: 700px;
+}
+
+
+
+
+
+
+
+
+
+.bj {
+    position: relative;
+    margin-top: 60px;
+    right: 40px;
+}
+
+.bj1 {
+    position: relative;
+    margin-top: 60px;
+    margin-left: 110px;
+}
+
+.wenzi {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.34);
+    margin-left: 760px;
+    margin-top: 230px;
+
+}
+
+.2016 {
+    position:absolute;
+
+
+}
+
+
+
+#chenshan {
+    position:relative;
+    height: 40px;
+    margin-top: 760px;
+    text-align: center;
+
+}
+
+#chenshanbiaoti {
+    height: 60px;
+    z-index: 11;
+    color: #eec7ca;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#chenshantu {
+    text-align: center;
+    margin-top: -20px;
+
+}
+
+#xiangqing {
+    text-align: center;
+    height: 60px;
+    margin-top: 8px;
+}
+
+#maoyi {
+    position:relative;
+    height: 40px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.chenshantu {
+    height: 500px;
+    background: #aaa;
+    margin-top: 40px;
+}
+
+
+
+.zuo {
+    margin-top: 50px;
+}
+
+#maoyitu {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.zuozi {
+    margin-left:20px;
+}
