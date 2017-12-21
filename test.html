@@ -3,50 +3,104 @@
 
 <head>
 
-   <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css " rel="stylesheet">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css " rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-
-
-
-
-
-    <!--
-    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css " rel="stylesheet">
-
-     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js "></script>
-
-     <script src="https://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
--->
 
 </head>
 
 <body>
-    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on 左侧
-</button>
+    <img id="cake1btn" src="images/cake1.png" style="margin-left: 0">
 
-    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on 顶部
-</button>
+<!--    <span class="fa fa-bath" style="font-size: 48px;margin-left: 30px;margin-top: 30px"></span>-->
+    <!--
+    <div class="btn btn-primary" onclick="wxt()">点我点我</div>
+    <h1 id="nin">请点击<span id="cishu"></span>
 
-    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on 底部
-</button>
+    </h1>
+-->
+<!--
 
-    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-  Popover on 右侧
-</button>
+    <div id="hezi" style="width: 300px;height: 300px;background: #ccc;text-align: center;padding: 12px;">
+        <h1 id='wenzi' class="animated 1 fadeOutDown">Example</h1>
+    </div>
+-->
+    <!--
+<div id="a" style="height: 300px;background: #aaa">AA</div>
+<div id="b" style="height: 500px;background: #bbb">BB</div>
+<div id="c" style="height: 400px;background: #ccc">CC</div>
+<div id="d" style="height: 500px;background: #eee">DD</div>
+-->
+
 </body>
 
 <script>
-    $(function() {
-        $('[data-toggle="popover"]').popover()
-    })
-</script>
 
+    setInterval(function(){
+
+       var weizhix=$("#cake1btn").css('margin-left');
+        weizhix.replace('px','')
+        weizhix=Number(weizhix)+1;
+        $("#cake1").css({'margin-left':weizhix+"px"})
+    },100);
+
+
+//    $('#cake1btn').hover(function(){
+//         $('#cake1btn').attr('src','images/cake3.png');
+//    },function(){
+//        $('#cake1btn').attr('src','images/cake1.png');
+//    });
+//    $('#cake1btn').mousedown(function(){
+//        $('#cake1btn').attr('src','images/cake2.png');
+//    });
+//    function huaru() {
+//        $("#wenzi").attr('class', 'animated 1 fadeInUp');
+//        $("#hezi").css({
+//            boxShadow: '0 0 18px #888',
+//        });
+//    };
+//
+//    function huachu() {
+//        $("#wenzi").attr('class', 'animated 1 fadeOutDown');
+//        $("#hezi").css({
+//            'box-shadow': 'none',
+//        });
+//    };
+//    $("#hezi").hover(huaru, huachu);
+
+    //    function toc(){
+    //        $("#c").scroll();
+    //    }
+    //    function wxt() {
+    //        while (1) {
+    //            alert('你爱吃屎吗');
+    //            alert('哈哈  我就知道你爱吃');
+    //            alert('然后我还知道你很多秘密呢');
+    //            alert('你要不要听一听呀');
+    //            alert('我就知道你要听');
+    //            alert('就是不告诉你 嘻嘻嘻');
+    //        }
+    //    }
+
+
+    //    function wxt() {
+    //        if ($("#nin").css('display')=='none') {
+    //
+    //            $("#nin").show(1000);
+    //            $("#nin").html("点击显示");
+    //
+    //        } else {
+    //
+    //            $("#nin").hide(1000);
+    //            $("#nin").html("点击隐藏");
+    //
+    //            onoff = 1
+    //        }
+    //
+    //    }
+</script>
 
 
 
